@@ -1,0 +1,74 @@
+body{
+    background-image: url("erik-mclean-H8gCthc8aT4-unsplash 1.svg");
+    background-position: center;
+}
+
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 400px;
+}
+input{
+    width: 495px;
+    height: 45px;
+    border-radius: 44px;
+    border:0px
+}
+#inpt1{
+    grid-row: 1/2;
+    background: #FFFFFF;
+    border-radius: 44px;
+    padding: 1em;
+    align-self: center;
+}
+
+#inpt2{
+    grid-row: 2/3;
+    background: #FFFFFF;
+    border-radius: 44px;
+    padding: 1em;
+    align-self: center;
+}
+#txt1{
+    font-size: 24px;
+    font-family: Roboto;
+}
+#txt2{
+    font-size: 24px;
+    font-family: Roboto;
+}
+.btn1{
+    grid-row: 3/4;
+    background: #67344D;
+    border-radius: 44px;
+    align-items: center;
+    padding: 1em;
+    align-self: center;
+}
+.btn2{
+    grid-row: 4/5;
+    background: #67344D;
+    border-radius: 44px;
+    align-items: center;
+    padding: 1em;
+    align-self: center;
+}
+#but1{
+    background-color: #67344D;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: Roboto;
+}
+#but2{
+    background-color: #67344D;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: Roboto;
+}
+

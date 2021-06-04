@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <title>OSM and Leaflet</title>
+         <link rel= "stylesheet" href = "/Sprint_week_feb_2021/map.css"/>
+         <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+         <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+         <script type= "text/javascript" src="/Sprint_week_feb_2021/map.js"></script>
+      
+      </head>
+      <body>
+         <div class ="main">
+            <span class="button">
+               <input id="btn" type="button" onclick= "getLocation()" value="Locate Me"></button>
+            </span>
+               <p id="demo"></p>
+            <div id="map"></div>
+            <script>
+               // Creating map options,placing object on map and creating a tile layer and adding that to the map
+               let mapOptions = {
+                  center: [47.7596, -53.2431],
+                  zoom: 9
+               }
+               let map = new L.map('map', mapOptions);
+               let layer1 = new L.TileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png');
+               map.addLayer(layer1); 
+            </script>
+            <div id="display"></div>
+         </div>
+      </body>
+      
+   </html>

@@ -1,0 +1,61 @@
+
+body{
+    background-image: url("erik-mclean-H8gCthc8aT4-unsplash 1.svg");
+    background-position: center;
+}
+.main{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'map map'
+    'btn btn'
+    'dis dis';
+}
+input{
+    width: 395px;
+    height: 100px;
+    border-radius: 44px;
+    align-content: center;
+    border:3px black solid;
+}
+#btn{
+    background-color: rgb(170, 177, 177);
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    text-align: center;
+    font-family: Roboto;
+}
+.button{
+    grid-area: btn;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    align-self: center;
+   
+}    
+#map{
+    grid-area: map;
+    padding: 7em;
+    min-height: 40vh;
+    min-width: 40vw;
+    margin-right:30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 44px;
+}
+#display{
+    grid-area: dis;
+    padding: 7em;
+    height:40vh;
+    align-items: stretch;
+    background-color: rgb(235, 231, 231);
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin: right 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 44px;
+}
